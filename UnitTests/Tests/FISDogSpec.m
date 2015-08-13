@@ -8,6 +8,7 @@
 
 #import "Specta.h"
 #import "FISDog.h"
+#import "FISPet.h"
 #define EXP_SHORTHAND
 #import "Expecta.h"
 

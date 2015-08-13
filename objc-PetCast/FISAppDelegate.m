@@ -7,12 +7,24 @@
 //
 
 #import "FISAppDelegate.h"
+#import "FISDog.h"
+#import "FISPet.h"
 @interface FISAppDelegate ()
 
 @end
 @implementation FISAppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+//    In your FISAppDelegate application:didFinishLaunchingWithOptions:, create an instance of an FISDog.
+    FISDog *doggie = [[FISDog alloc] init];
+//    Cast it to be an FISPet and make it go "Woof." and "Nom nom nom." 
+    FISPet *newPet = (FISPet *)doggie;
+    [newPet makeASound];
+    [newPet eatSomething];
+//    Then create an instance of an FISPet. Cast it to be an FISDog, and make it go "Pet me!"
+    FISPet *pet = [[ FISPet alloc]init];
+    FISDog *newDoggie = (FISDog *)pet;
+    [newDoggie makeASound];
     return YES;
 }
 
