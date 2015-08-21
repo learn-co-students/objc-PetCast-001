@@ -11,13 +11,13 @@
 @implementation FISDog
 
 -(NSString *)makeASound{
-    NSString *sound = @"Woof.";
-    return [[NSString alloc]initWithFormat:@"%@", sound];
+    NSString *woof = @"Woof!";
+    return woof;
 }
 
 -(NSString *)assaultTheMailman{
-    NSString *sound = @"I got the mail! I got the mail!";
-    return [[NSString alloc]initWithFormat:@"%@",sound];
+    NSString *mail = @"I got the mail! I got the mail!";
+    return mail;
 }
 
 @end

@@ -20,12 +20,20 @@
     
     
     FISDog *dog = [[FISDog alloc]init];
-    NSLog(@"%@",[dog makeASound]);
-    NSLog(@"%@",[((FISPet *)dog) eatSomething]);
+    FISPet *dogPet = (FISPet *)dog;
+    [dogPet makeASound];
+    [dogPet eatSomething];
+    
+    FISPet *pet= [[FISPet alloc]init];
+    FISDog *petDog= (FISDog *)pet;
+    [petDog makeASound];
     
     
-    FISPet *pet = [[FISPet alloc]init];
-    NSLog(@"%@",[((FISDog *)pet) makeASound]);
+    
+    
+    
+    
+
     
     
     return YES;

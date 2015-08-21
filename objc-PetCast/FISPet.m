@@ -11,14 +11,14 @@
 @implementation FISPet
 
 -(NSString *)makeASound{
-    NSString *sound = @"Pet me!";
-    return [[NSString alloc]initWithFormat:@"%@",sound];
+    NSString *petMe = @"Pet me!";
+    return petMe;
     
 }
 
 -(NSString *)eatSomething{
-    NSString *sound = @"Nom nom nom.";
-    return [[NSString alloc]initWithFormat:@"%@",sound];
+    NSString *nom = @"Nom nom nom.";
+    return nom;
 }
 
 @end
