@@ -7,12 +7,35 @@
 //
 
 #import "FISAppDelegate.h"
+#import "FISPet.h"
+#import "FISDog.h"
+
+
 @interface FISAppDelegate ()
 
 @end
 @implementation FISAppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    FISDog *dog = [[FISDog alloc]init];
+    FISPet *dogPet = (FISPet *)dog;
+    [dogPet makeASound];
+    [dogPet eatSomething];
+    
+    FISPet *pet= [[FISPet alloc]init];
+    FISDog *petDog= (FISDog *)pet;
+    [petDog makeASound];
+    
+    
+    
+    
+    
+    
+
+    
+    
     return YES;
 }
 
