@@ -11,7 +11,7 @@
 @implementation FISDog
 
 -(NSString *)makeASound{
-    return @"Woof";
+    return @"Woof!";
 }
 -(NSString *)assaultTheMailman{
     return @"I got the mail! I got the mail!";
