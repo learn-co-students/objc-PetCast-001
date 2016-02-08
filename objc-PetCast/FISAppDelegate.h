@@ -1,4 +1,5 @@
 //  FISAppDelegate.h
+#import "FISDog.h"
 
 @interface FISAppDelegate : UIResponder <UIApplicationDelegate>
 
