@@ -11,6 +11,8 @@
 		319BA7CA19DEFFC20031C31D /* FISPetSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 319BA7C819DEFFC20031C31D /* FISPetSpec.m */; };
 		482D2E8F47AD47979EFF891C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AF81A5289D45EAA2F19EF4 /* main.m */; };
 		5171D40E67259D41884EDCC0 /* libPods-unit_tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B627BE81D7997190CF7802 /* libPods-unit_tests.a */; };
+		731519C21C68CD7C008105F8 /* FISPet.m in Sources */ = {isa = PBXBuildFile; fileRef = 731519C11C68CD7C008105F8 /* FISPet.m */; };
+		731519C51C68CE3A008105F8 /* FISDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 731519C41C68CE3A008105F8 /* FISDog.m */; };
 		9AF9063830C34ED0B3E89B3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F28609C53504142A3CDCCAD /* Foundation.framework */; };
 		DCCE3AAABDF34C04AE42C254 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 333D26DD4ABC4AE2A85B33E2 /* Images.xcassets */; };
 		FDC791D83E89434B87E488A3 /* FISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CC415B5C7E445DAD1414D9 /* FISAppDelegate.m */; };
@@ -38,6 +40,10 @@
 		67F6C2266F4869A02E7A8109 /* Pods-unit_tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6BF26FB9837047FF8DA599D0 /* FISAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FISAppDelegate.h; sourceTree = "<group>"; };
 		70CC415B5C7E445DAD1414D9 /* FISAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FISAppDelegate.m; sourceTree = "<group>"; };
+		731519C01C68CD7C008105F8 /* FISPet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISPet.h; sourceTree = "<group>"; };
+		731519C11C68CD7C008105F8 /* FISPet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISPet.m; sourceTree = "<group>"; };
+		731519C31C68CE3A008105F8 /* FISDog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISDog.h; sourceTree = "<group>"; };
+		731519C41C68CE3A008105F8 /* FISDog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISDog.m; sourceTree = "<group>"; };
 		964253FB2F274C7FBAB8042F /* objc-PetCast-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "objc-PetCast-Prefix.pch"; sourceTree = "<group>"; };
 		AC7D892834C14E1185B11DFA /* UnitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		B8B627BE81D7997190CF7802 /* libPods-unit_tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-unit_tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +150,10 @@
 		DC1B94A60B48414CA3B72004 /* objc-PetCast */ = {
 			isa = PBXGroup;
 			children = (
+				731519C01C68CD7C008105F8 /* FISPet.h */,
+				731519C11C68CD7C008105F8 /* FISPet.m */,
+				731519C31C68CE3A008105F8 /* FISDog.h */,
+				731519C41C68CE3A008105F8 /* FISDog.m */,
 				6BF26FB9837047FF8DA599D0 /* FISAppDelegate.h */,
 				70CC415B5C7E445DAD1414D9 /* FISAppDelegate.m */,
 				56B4D1BEB3A042BD9188A24F /* Resources */,
@@ -200,6 +210,7 @@
 				D510F2CB80D04A9586F3C55A /* Frameworks */,
 				D629438041BE47ADBF2BD55A /* Resources */,
 				E5D1E721A1312CA9A2EA2DB3 /* Copy Pods Resources */,
+				3590A20F93270738697AEB74 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +269,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3590A20F93270738697AEB74 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3ECE92D272EC48418C93227B /* Warn for TODO and FIXME comments */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -311,6 +337,8 @@
 			files = (
 				FDC791D83E89434B87E488A3 /* FISAppDelegate.m in Sources */,
 				482D2E8F47AD47979EFF891C /* main.m in Sources */,
+				731519C21C68CD7C008105F8 /* FISPet.m in Sources */,
+				731519C51C68CE3A008105F8 /* FISDog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
